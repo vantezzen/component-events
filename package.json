@@ -1,0 +1,60 @@
+{
+  "name": "@vantezzen/component-events",
+  "description": "Create custom events for your React components",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "vantezzen",
+  "keywords": [
+    "react",
+    "event",
+    "component",
+    "custom",
+    "emit",
+    "dispatch",
+    "listen",
+    "on",
+    "off",
+    "once"
+  ],
+  "bugs": {
+    "url": "https://github.com/vantezzen/component-events/issues"
+  },
+  "homepage": "https://github.com/vantezzen/component-events#readme",
+  "type": "module",
+  "main": "./dist/component-events.umd.cjs",
+  "module": "./dist/component-events.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/component-events.js",
+      "require": "./dist/component-events.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.1"
+  }
+}
